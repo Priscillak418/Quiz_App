@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- top section -->
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-primary display-3 my-4 title-heading" >The Big Bang Theory Quiz</h2>
+      </div>
+    </div>
+
+    <!-- result section -->
+    <div class="result py-4 d-none bg-light text-center">
+      <div class="container lead">
+        <p>You're score is<span class="text-primary display-4 p-3">0%</span></p>
+      </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">On with the questions...</h2>
+
+        <form class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. Which restaurant did Penny work at?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">The Cheesecake Factory</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label"
+                >Outback Steakhouse</label
+              >
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. What is Raj’s dog's name?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label">Cinnamon</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label">Princess</label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. Who is Missy?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label"
+                >Sheldon's twin sister</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label"
+                >Penny's older sister</label
+              >
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. What is Sheldon’s catchphrase?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label">Bazooka!</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">Bazinga!</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. What field does Amy specialize in?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="form-check-label">Neuorobiology</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label">Environmental science</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6.What is Howard’s astronaut nickname?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="form-check-label">Fruit loops</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="B" />
+              <label class="form-check-label">Cheerios</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7.Where do Penny and Leonard get married?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="form-check-label">L.A. Comic Con</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="B" />
+              <label class="form-check-label">Las Vegas</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8.What is the group seen doing in most episodes?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="form-check-label">Eating takeout</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="B" />
+              <label class="form-check-label">Playing videogames</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              9.In the early seasons, Raj can’t talk to women unless he is doing what?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="form-check-label">Wearing his lucky jacket</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="B" />
+              <label class="form-check-label">Drinking</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10.Who "dies" during Raj’s murder mystery night?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="form-check-label">Bernadette</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="B" />
+              <label class="form-check-label">Stuart</label>
+            </div>
+          </div>
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
